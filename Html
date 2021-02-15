@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>WELLNESS ANALYSING SYSTEM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hw1.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>WELLNESS MONITORING PAGE</h1>
+  
+</div>
+
+<div class="navbar">
+  <a href="#">HOME</a>
+  <a href="#">MORE ABOUT</a>
+  
+  <a href="#" class="right">Link</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About</h2>
+    <h5>HEALTH MONITOR</h5>
+    <div class="heartbeart.jpg" style="height:2px;">Image</div>
+    <img src="heartbeart.jpg" style="height:200px;"></img>
+    <p>To check the correct values of heartbeat,pulserate and temperature of the body:</p>
+    <p id="des"></p>
+    <a class="button"
+    onclick='document.getElementById("des").innerHTML="For most adults, an ideal BMI is in the 18.5 to 24.9 range. For children and young people aged 2 to 18, the BMI calculation takes into account age and gender as well as height and weight. If your BMI is: below 18.5 – you Rre in the underweight range."'>BMI</a>
+
+
+    <p id="demo"></p>
+
+<a class="button"
+onclick='document.getElementById("demo").innerHTML="A normal resting heart rate for adults ranges from 60 to 100 beats per minute. Generally, a lower heart rate at rest implies more efficient heart function and better cardiovascular fitness. For example, a well-trained athlete might have a normal resting heart rate closer to 40 beats per minute. "'>Normal Heart Beat Rate</a>
+
+   <p id="new"></p>
+
+   <a class="button"
+onclick='document.getElementById("new").innerHTML="The average normal body temperature is generally accepted as 98.6°F (37°C). Some studies have shown that the normal body temperature can have a wide range, from 97°F (36.1°C) to 99°F (37.2°C). A temperature over 100.4°F (38°C) most often means you have a fever caused by an infection or illness."'>Normal Temperature Range</a>
+
+
+  <p id="nive"></p>
+  
+  <a class="button"
+  onclick='document.getElementById("nive").innerHTML="As a general guide: ideal blood pressure is considered to be between 90/60mmHg and 120/80mmHg. high blood pressure is considered to be 140/90mmHg or higher. low blood pressure is considered to be 90/60mmHg or lower."'>Normal Blood pressure Range </a> 
+  <div class="main">
+    <h2>PNEUMONIA</h2>
+    
+    
+    <img src="des2.jpg" style="height:200px;"></img>
+    <h2>WHAT?</h2>
+    <p>Pneumonia is an infection that inflames the air sacs in one or both lungs. The air sacs may fill with fluid or pus (purulent material), causing cough with phlegm or pus, fever, chills, and difficulty breathing. A variety of organisms, including bacteria, viruses and fungi, can cause pneumonia.</p>
+    <h2>Symptoms</h2>
+    <p>Most types of pneumonia cause fever, cough with sputum (coughed-up mucus), shortness of breath and fatigue. In older patients, fatigue or confusion can be the only or most noticeable symptom. In viral pneumonia, a dry cough without sputum is more common. 
+    </p>
+    <h2>Diagnosis</h2>
+    <p>Your doctor first will ask about your symptoms. During the physical exam, your doctor will check to see if you are breathing rapidly. He or she also will look for confusion and a purplish hue in your lips, fingernails or hands because these symptoms can indicate that you have low levels of oxygen in your blood. Using a stethoscope, a health care professional can listen through your back for abnormal sounds from the lungs. The diagnosis of pneumonia most often is confirmed by a chest X-ray.</p>
+    <img src="dia.jpg" style="height:200px;" style="width: 100px;"></img>
+    <h2>Expected Duration</h2>
+    <p>How long pneumonia lasts can vary from a few days to a week or longer, depending on how early you start antibiotics and what other medical problems you may have. Antibiotic treatment for pneumonia usually lasts from 5 to 14 days. Many people find that it takes a few weeks to several weeks to regain the level of energy they had before the pneumonia.</p>
+    <h2>Prevention</h2>
+    <p>Vaccination helps protect at risk people from S. pneumoniae infection. Currently, a 2 vaccine strategy is recommended. The two vaccines are PCV13 (Prevnar) and PPSV23 (Pneumovax) given several months apart. They are recommended for people 65 and older and for people ages 19 to 64 at higher than average risk of developing serious pneumonia. This includes people who smoke and people with: </p>
+    <ul>
+    <li>lung diesease including asthma</li>
+    <li>Heart diesease,liver diesease,kidney disease</li>
+    <li>A damaged spleen or no spleen  </li>
+    <li>A weakened immune system </li>
+
+</ul>
+<h2>Treatment</h2>
+<p>The main treatment for pneumonia is one or more antibiotics. A younger or healthier person can be treated safely with antibiotics at home and can feel better in a few days. Some people are at higher risk of complications and may need to be hospitalized for two days to a week. They include people who are older than 60 or have other diseases such as heart failure, active cancer, chronic kidney disease or chronic obstructive pulmonary disease (COPD).  
+
+In addition to antibiotics, other treatments for pneumonia include rest, adequate fluid, and supplemental oxygen to raise the level of oxygen in the blood. </p>
+<h2>When To Call a Professional</h2>
+<p>A simple cold or bronchitis caused by a virus can share many of the same symptoms as pneumonia. Pneumonia is possible when your cough produces sputum with a green or brown color, you are having shaking chills or you are having trouble breathing. In these cases, you should call your doctor for an urgent evaluation.  
+
+Also, if you have been diagnosed with a cold or bronchitis and symptoms are getting worse or persist after a week, you should call your doctor's office for another evaluation.</p>
+<h2>To learn more about:</h2>
+<p>National Heart, Lung, and Blood Institute (NHLBI)</p>
+<a href="https://www.nhlbi.nih.gov/">Go to NHLBI</a>
+<h2>Videos</h2>
+<p>Visit this yobtube link to get more about the diesease</p>
+<a href="https://www.webmd.com/lung/understanding-pneumonia-basics">Go to youtube</a>
+
+
+  
+    
+    
+  
+
+</body>
+</html>
